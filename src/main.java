@@ -1,9 +1,11 @@
 public class main {
     public static void main(String[] args) {
-        saludar("Cristian");
-    }
 
-    public static void saludar(String nombre) {
-        System.out.println("Hola " + nombre);
+        Cuenta cuenta1 = new Cuenta("Cristian", 1000);
+
+        cuenta1.mostrarSaldo();
+        cuenta1.depositar(500);
+        cuenta1.retirar(200);
+        cuenta1.retirar(2000); // prueba error
     }
 }
